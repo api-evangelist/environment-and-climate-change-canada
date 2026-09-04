@@ -73,3 +73,5 @@ apis:
     url: https://geo.ec.gc.ca/geoserver/ogc/features/v1
   - type: Collections
     url: https://geo.ec.gc.ca/geoserver/ogc/features/v1/collections?f=json
+  - type: ConformanceEndpoint
+    url: https://geo.ec.gc.ca/geoserver/ogc/features/v1/conformance
