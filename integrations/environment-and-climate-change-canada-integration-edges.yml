@@ -1,0 +1,60 @@
+edges:
+- partner_name: World Meteorological Organization (WIS 2.0)
+  partner: wmo
+  partner_match: register
+  type: register
+  direction: partner-built
+  channel: standard-directory
+  relationship: standard-participant
+  evidence: https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&centre-id=ca-eccc-msc
+  match:
+    method: domain+name-among-holders
+    domain: gc.ca
+    seen_as:
+    - contact email
+    - record link (about)
+    - record link (archives)
+    - record link (collection)
+    - record link (data)
+    - record link (items)
+  wis2:
+    centre_id: ca-eccc-msc
+    organization: Government of Canada; Environment and Climate Change Canada; Meteorological Service of Canada
+    datasets: 115
+    data_policy:
+    - core
+    - recommended
+    disciplines:
+    - atmospheric-composition
+    - climate
+    - cryosphere
+    - hydrology
+    - ocean
+    - weather
+    access:
+    - https
+    - mqtt-notification
+    - ogc-api
+    catalogues:
+    - gdc.wis2dev.io
+    - wis2-gdc.weather.gc.ca
+    sample_record: urn:wmo:md:ca-eccc-msc:5e8247ca-891e-5686-a6a5-0631c50fe2db
+  contract_reference:
+    register: WMO WIS2 Global Discovery Catalogue (wis2-gdc.weather.gc.ca, gdc.wis2dev.io)
+    spec_file: null
+    role: wis2-centre
+    registered_name: Government of Canada; Environment and Climate Change Canada; Meteorological Service of Canada
+    register_id: ca-eccc-msc
+    matched_domain: gc.ca
+    detected_by: sweep-weather.py
+    detected: '2026-10-15'
+  detected_by: sweep-weather.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+checked:
+- https://gdc.wis2dev.io/collections/wis2-discovery-metadata/items?f=json&limit=3000
+- https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&limit=3000
+source:
+- https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&limit=3000
+- https://gdc.wis2dev.io/collections/wis2-discovery-metadata/items?f=json&limit=3000
