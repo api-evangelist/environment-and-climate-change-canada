@@ -66,21 +66,72 @@
 
 Environment and Climate Change Canada (ECCC) is the federal department responsible for weather, climate, water and environmental protection in Canada, and operates the Meteorological Service of Canada. It runs an OGC-standard GeoServer at geo.ec.gc.ca which responds correctly to WMS, WFS and OGC API - Features requests but, when probed on 2026-08-20, published no layers, no feature types and no collections through it.
 
-Profiled 2026-08-20 as part of the [OGC](../ogc/) standards-body pass — this organization is an
-**OGC Explorer member** (Government, Canada), found in OGC's own
-active-member roster and confirmed to serve a live OGC surface on its own host.
+**Areas:** Geospatial · OGC · WMS · GIS · Empty Surface
 
-## APIs
+## Environment and Climate Change Canada on APIs.io
 
-| aid | name | base | contract |
-|---|---|---|---|
-| `environment-and-climate-change-canada:ogc-web-services` | Environment and Climate Change Canada OGC Web Services (WMS / WFS) | https://geo.ec.gc.ca/geoserver/ows | 1 GetCapabilities |
-| `environment-and-climate-change-canada:ogc-api-features` | Environment and Climate Change Canada OGC API - Features | https://geo.ec.gc.ca/geoserver/ogc/features/v1 | 0 GetCapabilities |
+Everything profiled for Environment and Climate Change Canada is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/environment-and-climate-change-canada/](https://apis.io/providers/environment-and-climate-change-canada/)** — or go straight to one of the APIs or properties below.
 
-## Provenance
+### APIs (2)
 
-Every GetCapabilities document under `openapi/` was retrieved **anonymously, with HTTP 200, on
-2026-08-20** and is stored verbatim — it is the machine-readable contract for a classic OGC service,
-which has no OpenAPI. Nothing here is derived from documentation.
+- [Environment and Climate Change Canada OGC Web Services (WMS / WFS)](https://apis.io/apis/environment-and-climate-change-canada/ogc-web-services/) — An OGC-standard GeoServer at geo.ec.gc.ca. Probed anonymously on 2026-08-20: the WMS 1.3.0 GetCapabilities request returned HTTP 200 with a valid…
+- [Environment and Climate Change Canada OGC API - Features](https://apis.io/apis/environment-and-climate-change-canada/ogc-api-features/) — A GeoServer-provided OGC API - Features endpoint on the same host. Probed anonymously on 2026-08-20: /collections?f=json returned HTTP 200 with a…
 
-Membership facts come from `https://portal.ogc.org/services/srv_active_members_csv_new.php`.
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://geo.ec.gc.ca/)
+
+## API Evangelist rating
+
+**Kin Score 5.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 0.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/environment-and-climate-change-canada/](https://apis.io/providers/environment-and-climate-change-canada/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Environment and Climate Change Canada: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/environment-and-climate-change-canada/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
